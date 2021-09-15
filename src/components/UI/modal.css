@@ -1,0 +1,48 @@
+.backDrop {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1111;
+}
+.modalOverlay {
+  height: auto;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: fixed;
+  top: 120px;
+  right: 80px;
+  z-index: 2222;
+}
+
+@media (max-width: 768px) {
+  .modalOverlay {
+    width: 350px !important;
+    top: 100px !important;
+    right: 200px !important;
+  }
+}
+@media (max-width: 640px) {
+  .modalOverlay {
+    width: 350px !important;
+    top: 100px !important;
+    right: 60px !important;
+  }
+}
+@media (max-width: 414px) {
+  .modalOverlay {
+    width: 330px !important;
+    top: 100px !important;
+    right: 40px !important;
+  }
+}
+@media (max-width: 401px) {
+  .modalOverlay {
+    width: 330px 1;
+    top: 100px !important;
+    right: 10px !important;
+  }
+}

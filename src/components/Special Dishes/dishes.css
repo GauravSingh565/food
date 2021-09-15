@@ -1,0 +1,77 @@
+.dishesDiv {
+  height: auto;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #fff;
+  /* border: 1px solid black; */
+}
+.dishContainer {
+  height: auto;
+  width: 85%;
+  margin: 0px auto;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  /* border: 1px solid black; */
+}
+.dishesDiv h1 {
+  text-align: center;
+  color: #111;
+  font-weight: 600;
+}
+.dishesDiv h1 span {
+  color: rgb(252, 45, 45);
+}
+.card {
+  height: auto;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+}
+.card img {
+  margin: 10px 0px;
+}
+.card p {
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.6s ease;
+}
+
+@media (max-width: 540px) {
+  .dishContainer .card {
+    margin-left: 70px !important;
+  }
+}
+@media (max-width: 520px) {
+  .dishContainer .card {
+    margin-left: 50px !important;
+  }
+}
+@media (max-width: 414px) {
+  .dishContainer .card {
+    margin-left: 20px !important;
+  }
+}
+@media (max-width: 401px) {
+  .dishContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  }
+  .dishContainer .card {
+    margin-left: 0px !important;
+  }
+}

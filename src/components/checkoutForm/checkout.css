@@ -1,0 +1,55 @@
+form {
+  margin: 20px 0px;
+}
+
+form input {
+  display: block;
+  font-size: 1.1rem;
+  border: 1px solid gray;
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-top: 5px;
+  color: #111;
+  font-weight: 600;
+}
+form input:focus {
+  outline: none;
+  border: 1px solid rgba(61, 61, 204, 0.897);
+  background-color: rgba(61, 61, 204, 0.5);
+}
+form label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+.checkoutBtn {
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(241, 81, 81);
+  padding: 6px 15px;
+  border-radius: 10px;
+  border: none;
+}
+.checkoutBtn:focus {
+  outline: none;
+}
+.invalidInputClass {
+  border: 1px solid rgb(241, 81, 81) !important;
+  background-color: rgba(241, 81, 81, 0.6) !important;
+}
+.checkoutBtn:disabled,
+.checkoutBtn:disabled:hover,
+.checkoutBtn:disabled:active {
+  background-color: #ccc;
+  color: #111;
+  cursor: not-allowed !important;
+}
+
+.invalid {
+  color: rgb(241, 81, 81);
+  font-weight: 600;
+  margin: 5px 0px;
+}

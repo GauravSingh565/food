@@ -1,0 +1,222 @@
+.mealsDiv {
+  height: auto;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #fff;
+}
+.mealsDiv h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #111;
+}
+.mealsDiv h1 span {
+  color: rgb(252, 45, 45);
+}
+.mealsContainer {
+  width: 85%;
+  margin: auto;
+  padding: 60px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.mealsCard {
+  height: auto;
+  width: 350px;
+  margin-top: 15px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.mealsCard:hover {
+  transform: translateY(-10px);
+  transition: all 0.6s ease-in-out;
+}
+.imgDiv {
+  height: 180px;
+  width: 95%;
+  border-radius: 5px;
+}
+.imgDiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.mealsDesc {
+  height: auto;
+  width: 100%;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mealsDesc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+}
+.mealsDesc .desc {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.price {
+  color: rgb(252, 45, 45);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.cardFooter {
+  height: auto;
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartBtn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(252, 45, 45);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cartBtn:focus {
+  outline: none;
+}
+
+.inputDiv label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 10px;
+  color: #111;
+}
+.amountInput {
+  font-size: 1.1rem;
+  border: 1px solid #111;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.amountInput:focus {
+  outline: none;
+}
+.loadingDiv {
+  height: 300px;
+  width: 300px;
+  margin: 40px 0px 0px 500px;
+}
+.loadingDiv img {
+  height: 100%;
+  width: 100%;
+}
+.errorMsg {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .mealsCard {
+    width: 300px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.2rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 640px) {
+  .mealsCard {
+    width: 430px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.4rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 540px) {
+  .mealsCard {
+    width: 430px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.4rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 520px) {
+  .mealsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  }
+  .mealsCard {
+    width: 400px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.2rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 414px) {
+  .mealsCard {
+    width: 350px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.2rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 401px) {
+  .mealsCard {
+    width: 300px !important;
+  }
+  .mealsDesc h3 {
+    font-size: 1.2rem;
+  }
+  .mealsDesc .desc {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
